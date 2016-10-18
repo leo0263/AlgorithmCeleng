@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="AlgorithmCeleng" Database="">
+  <Project Name="MandragoraForest" Path="MandragoraForest/MandragoraForest.project" Active="No"/>
+  <Project Name="NikitaAndTheGame" Path="NikitaAndTheGame/NikitaAndTheGame.project" Active="No"/>
+  <Project Name="aadc_TripleCoreProcessor" Path="aadc_TripleCoreProcessor/aadc_TripleCoreProcessor.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="MandragoraForest" ConfigName="Debug"/>
+      <Project Name="NikitaAndTheGame" ConfigName="Debug"/>
+      <Project Name="aadc_TripleCoreProcessor" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="MandragoraForest" ConfigName="Release"/>
+      <Project Name="NikitaAndTheGame" ConfigName="Release"/>
+      <Project Name="aadc_TripleCoreProcessor" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
