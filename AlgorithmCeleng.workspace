@@ -2,19 +2,33 @@
 <CodeLite_Workspace Name="AlgorithmCeleng" Database="">
   <Project Name="MandragoraForest" Path="MandragoraForest/MandragoraForest.project" Active="No"/>
   <Project Name="NikitaAndTheGame" Path="NikitaAndTheGame/NikitaAndTheGame.project" Active="No"/>
-  <Project Name="aadc_TripleCoreProcessor" Path="aadc_TripleCoreProcessor/aadc_TripleCoreProcessor.project" Active="Yes"/>
+  <Project Name="aadc_TripleCoreProcessor" Path="aadc_TripleCoreProcessor/aadc_TripleCoreProcessor.project" Active="No"/>
+  <Project Name="RedJohnisBack" Path="RedJohnisBack/RedJohnisBack.project" Active="No"/>
+  <Project Name="Factorial" Path="Factorial/Factorial.project" Active="No"/>
+  <Project Name="XsquareAndTwoArrays" Path="XsquareAndTwoArrays/XsquareAndTwoArrays.project" Active="No"/>
+  <Project Name="XsquareAndChocolatesBars" Path="XsquareAndChocolatesBars/XsquareAndChocolatesBars.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="MandragoraForest" ConfigName="Debug"/>
       <Project Name="NikitaAndTheGame" ConfigName="Debug"/>
       <Project Name="aadc_TripleCoreProcessor" ConfigName="Debug"/>
+      <Project Name="RedJohnisBack" ConfigName="Debug"/>
+      <Project Name="Factorial" ConfigName="Debug"/>
+      <Project Name="XsquareAndTwoArrays " ConfigName="Debug"/>
+      <Project Name="XsquareAndTwoArrays" ConfigName="Debug"/>
+      <Project Name="XsquareAndChocolatesBars" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="MandragoraForest" ConfigName="Release"/>
       <Project Name="NikitaAndTheGame" ConfigName="Release"/>
       <Project Name="aadc_TripleCoreProcessor" ConfigName="Release"/>
+      <Project Name="RedJohnisBack" ConfigName="Release"/>
+      <Project Name="Factorial" ConfigName="Release"/>
+      <Project Name="XsquareAndTwoArrays " ConfigName="Release"/>
+      <Project Name="XsquareAndTwoArrays" ConfigName="Release"/>
+      <Project Name="XsquareAndChocolatesBars" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

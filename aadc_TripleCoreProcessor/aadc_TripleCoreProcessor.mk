@@ -5,63 +5,63 @@
 ## Debug
 ProjectName            :=aadc_TripleCoreProcessor
 ConfigurationName      :=Debug
-WorkspacePath          :=D:/GithubRepo/AlgorithmCeleng
-ProjectPath            :=D:/GithubRepo/AlgorithmCeleng/aadc_TripleCoreProcessor
+WorkspacePath          :=C:/GitHub/AlgorithmCeleng
+ProjectPath            :=C:/GitHub/AlgorithmCeleng/aadc_TripleCoreProcessor
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=SRIN
-Date                   :=18/10/2016
-CodeLitePath           :="C:/Program Files/CodeLite"
-LinkerName             :="C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/link.exe" -nologo
-SharedObjectLinkerName :="C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/link.exe" -DLL -nologo
-ObjectSuffix           :=.obj
-DependSuffix           :=
+User                   :=Leonardi
+Date                   :=19/10/2016
+CodeLitePath           :=C:/CodeLite
+LinkerName             :=C:/TDMGCC/bin/g++.exe
+SharedObjectLinkerName :=C:/TDMGCC/bin/g++.exe -shared -fPIC
+ObjectSuffix           :=.o
+DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
-DebugSwitch            :=/Zi 
-IncludeSwitch          :=/I
-LibrarySwitch          := 
-OutputSwitch           :=/OUT:
-LibraryPathSwitch      :=/LIBPATH:
-PreprocessorSwitch     :=/D
+DebugSwitch            :=-g 
+IncludeSwitch          :=-I
+LibrarySwitch          :=-l
+OutputSwitch           :=-o 
+LibraryPathSwitch      :=-L
+PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
-ObjectSwitch           :=/Fo
-ArchiveOutputSwitch    :=/OUT:
+ObjectSwitch           :=-o 
+ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="aadc_TripleCoreProcessor.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=C:/TDMGCC/bin/windres.exe
 LinkOptions            :=  
-IncludePath            := $(IncludeSwitch)"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include"  $(IncludeSwitch). $(IncludeSwitch). 
+IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
 Libs                   := 
 ArLibs                 :=  
-LibPath                :=$(LibraryPathSwitch)"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\lib"  $(LibraryPathSwitch). 
+LibPath                := $(LibraryPathSwitch). 
 
 ##
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/lib.exe" -nologo
-CXX      := "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/cl.exe" -nologo -FC -EHs
-CC       := "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/cl.exe" -nologo -FC
+AR       := C:/TDMGCC/bin/ar.exe rcu
+CXX      := C:/TDMGCC/bin/g++.exe
+CC       := C:/TDMGCC/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := as
+AS       := C:/TDMGCC/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=C:\Program Files\CodeLite
+CodeLiteDir:=C:\CodeLite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -93,11 +93,16 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp 
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/GithubRepo/AlgorithmCeleng/aadc_TripleCoreProcessor/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/GitHub/AlgorithmCeleng/aadc_TripleCoreProcessor/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix)main.cpp
 
+
+-include $(IntermediateDirectory)/*$(DependSuffix)
 ##
 ## Clean
 ##
