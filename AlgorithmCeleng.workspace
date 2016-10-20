@@ -6,7 +6,8 @@
   <Project Name="RedJohnisBack" Path="RedJohnisBack/RedJohnisBack.project" Active="No"/>
   <Project Name="Factorial" Path="Factorial/Factorial.project" Active="No"/>
   <Project Name="XsquareAndTwoArrays" Path="XsquareAndTwoArrays/XsquareAndTwoArrays.project" Active="No"/>
-  <Project Name="XsquareAndChocolatesBars" Path="XsquareAndChocolatesBars/XsquareAndChocolatesBars.project" Active="Yes"/>
+  <Project Name="XsquareAndChocolatesBars" Path="XsquareAndChocolatesBars/XsquareAndChocolatesBars.project" Active="No"/>
+  <Project Name="OnceUponATimeInTimeLand" Path="OnceUponATimeInTimeLand/OnceUponATimeInTimeLand.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -18,6 +19,7 @@
       <Project Name="XsquareAndTwoArrays " ConfigName="Debug"/>
       <Project Name="XsquareAndTwoArrays" ConfigName="Debug"/>
       <Project Name="XsquareAndChocolatesBars" ConfigName="Debug"/>
+      <Project Name="OnceUponATimeInTimeLand" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -29,6 +31,7 @@
       <Project Name="XsquareAndTwoArrays " ConfigName="Release"/>
       <Project Name="XsquareAndTwoArrays" ConfigName="Release"/>
       <Project Name="XsquareAndChocolatesBars" ConfigName="Release"/>
+      <Project Name="OnceUponATimeInTimeLand" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
