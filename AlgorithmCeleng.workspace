@@ -7,7 +7,10 @@
   <Project Name="Factorial" Path="Factorial/Factorial.project" Active="No"/>
   <Project Name="XsquareAndTwoArrays" Path="XsquareAndTwoArrays/XsquareAndTwoArrays.project" Active="No"/>
   <Project Name="XsquareAndChocolatesBars" Path="XsquareAndChocolatesBars/XsquareAndChocolatesBars.project" Active="No"/>
-  <Project Name="OnceUponATimeInTimeLand" Path="OnceUponATimeInTimeLand/OnceUponATimeInTimeLand.project" Active="Yes"/>
+  <Project Name="OnceUponATimeInTimeLand" Path="OnceUponATimeInTimeLand/OnceUponATimeInTimeLand.project" Active="No"/>
+  <Project Name="RoyAndRopes" Path="RoyAndRopes/RoyAndRopes.project" Active="No"/>
+  <Project Name="ChoosingTheJudges" Path="ChoosingTheJudges/ChoosingTheJudges.project" Active="No"/>
+  <Project Name="NumberOfRs" Path="NumberOfRs/NumberOfRs.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -20,6 +23,9 @@
       <Project Name="XsquareAndTwoArrays" ConfigName="Debug"/>
       <Project Name="XsquareAndChocolatesBars" ConfigName="Debug"/>
       <Project Name="OnceUponATimeInTimeLand" ConfigName="Debug"/>
+      <Project Name="RoyAndRopes" ConfigName="Debug"/>
+      <Project Name="ChoosingTheJudges" ConfigName="Debug"/>
+      <Project Name="NumberOfRs" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -32,6 +38,9 @@
       <Project Name="XsquareAndTwoArrays" ConfigName="Release"/>
       <Project Name="XsquareAndChocolatesBars" ConfigName="Release"/>
       <Project Name="OnceUponATimeInTimeLand" ConfigName="Release"/>
+      <Project Name="RoyAndRopes" ConfigName="Release"/>
+      <Project Name="ChoosingTheJudges" ConfigName="Release"/>
+      <Project Name="NumberOfRs" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
