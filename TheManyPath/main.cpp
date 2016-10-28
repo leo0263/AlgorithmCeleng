@@ -88,7 +88,8 @@ int main()
         
         // do a sequential loop (from point 1 to 2, 2 to 3, etc..)
         // to find how many shortest path to destination there are
-        int totalDistances = 0;
+        bool anyPathFound = false;
+        int totalDistances = 1;
         int shortestWaysToDestination;
         for (int start = 1; start <= maxDestination-1; start++) {
             shortestWaysToDestination = 0;
@@ -140,10 +141,14 @@ int main()
             //cout << start << " to " << destination << " shortest way(s) found = " << shortestWaysToDestination << endl;  
             
             // for every pair of start-stop destinations (1-2, 2-3, 3-4, etc) count the total cost
-            totalDistances += (shortestWaysToDestination * shortestWaysToDestination);
+            if (shortestWaysToDestination != 0) {
+                anyPathFound = true;
+                totalDistances = totalDistances * shortestWaysToDestination;
+            }
         }
 
-        cout << "case #" << t << ": " << totalDistances;
+        if (anyPathFound) cout << "case #" << t << ": " << totalDistances << endl;
+        else cout << "case #" << t << ": " << 0 << endl;
     }
     
     return 0;
