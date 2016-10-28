@@ -2,22 +2,7 @@
 <Session Name="C:\Users\SRIN\Documents\GitHub\AlgorithmCeleng\AlgorithmCeleng.workspace">
   <int Value="0" Name="m_selectedTab"/>
   <wxString Value="C:\Users\SRIN\Documents\GitHub\AlgorithmCeleng\AlgorithmCeleng.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray">
-    <TabInfo>
-      <wxString Value="C:\Users\SRIN\Documents\GitHub\AlgorithmCeleng\NumberOfRs\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="23" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\SRIN\Documents\GitHub\AlgorithmCeleng\NumberOfRs\sampleIO.txt" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-  </TabInfoArray>
+  <TabInfoArray Name="TabInfoArray"/>
   <SerializedObject Name="m_breakpoints">
     <long Value="0" Name="Count"/>
   </SerializedObject>
