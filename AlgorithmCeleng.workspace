@@ -11,7 +11,9 @@
   <Project Name="RoyAndRopes" Path="RoyAndRopes/RoyAndRopes.project" Active="No"/>
   <Project Name="ChoosingTheJudges" Path="ChoosingTheJudges/ChoosingTheJudges.project" Active="No"/>
   <Project Name="NumberOfRs" Path="NumberOfRs/NumberOfRs.project" Active="No"/>
-  <Project Name="TheManyPath" Path="TheManyPath/TheManyPath.project" Active="Yes"/>
+  <Project Name="TheManyPath" Path="TheManyPath/TheManyPath.project" Active="No"/>
+  <Project Name="CombinationSum" Path="CombinationSum/CombinationSum.project" Active="No"/>
+  <Project Name="MiniOthello" Path="MiniOthello/MiniOthello.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -28,6 +30,8 @@
       <Project Name="ChoosingTheJudges" ConfigName="Debug"/>
       <Project Name="NumberOfRs" ConfigName="Debug"/>
       <Project Name="TheManyPath" ConfigName="Debug"/>
+      <Project Name="CombinationSum" ConfigName="Debug"/>
+      <Project Name="MiniOthello" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -44,6 +48,8 @@
       <Project Name="ChoosingTheJudges" ConfigName="Release"/>
       <Project Name="NumberOfRs" ConfigName="Release"/>
       <Project Name="TheManyPath" ConfigName="Release"/>
+      <Project Name="CombinationSum" ConfigName="Release"/>
+      <Project Name="MiniOthello" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
