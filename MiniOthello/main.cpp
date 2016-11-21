@@ -13,13 +13,14 @@ int T, N, globalScore;
 t_board playOthello(t_board currentBoard, int cellPos, int pieceColor) {
     t_board resultBoard = currentBoard;
     
+    // color the target (empty) cell position with new color 
     resultBoard.pos[cellPos] = pieceColor;
     
     // scan to the left until we found same color cell
     int sameColorOnLeftPos = cellPos-1;
     while ((sameColorOnLeftPos >= 0) && (resultBoard.pos[sameColorOnLeftPos] != pieceColor)) sameColorOnLeftPos--;
     
-    // then check from current to left position if we can convert all cell betweens to current color
+    // then check from current to left position : can we convert all cell betweens to current color?
     // this means all pieces from current cell pos-1 to the first same color cell pos+1 must not be empty
     bool canConvertToLeft = true;
     for (int i = cellPos-1; i >= sameColorOnLeftPos+1; i--) 
@@ -68,12 +69,12 @@ void doOthello(int steps, t_board currentBoard) {
     // else do the recursion based on the current steps : 
     // 0 = black, 1 = white, 2 = black, etc
     if (steps % 2 == 0) { // black moves
-        for (int i = 0; i < N; i++) { // for every position in the board
+        for (int i = 0; i < N; i++) { // for every position in the board try to :
             if (currentBoard.pos[i] == 0) { // find an empty cell to put black pieces (as next recursion steps)
                 doOthello(steps + 1, playOthello(currentBoard, i, 1));
             }
         }
-    } else { // white moves, note that white always choose the leftmost blank cell
+    } else { // white moves, note that white AI always choose the leftmost blank cell
         int leftMostPosition = 0;
         for (int i = N-1; i >= 0; i--) if (currentBoard.pos[i] == 0) leftMostPosition = i;
         doOthello(steps + 1, playOthello(currentBoard, leftMostPosition, 2));
