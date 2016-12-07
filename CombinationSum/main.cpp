@@ -37,6 +37,6 @@ void combinationSum(int currentDigit, int sum, int digitIndex) {
 
 int main()
 {
-    goal = 4;
+    goal = 10;
     combinationSum(goal, 0, 0);
 }

@@ -67,7 +67,7 @@ void doOthello(int steps, t_board currentBoard) {
     
     
     // else do the recursion based on the current steps : 
-    // 0 = black, 1 = white, 2 = black, etc
+    // steps 0 = black move 1st, 1 = white turn, 2 = black turns again, etc
     if (steps % 2 == 0) { // black moves
         for (int i = 0; i < N; i++) { // for every position in the board try to :
             if (currentBoard.pos[i] == 0) { // find an empty cell to put black pieces (as next recursion steps)

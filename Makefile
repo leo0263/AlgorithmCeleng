@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ MiniOthello - Debug ]----------"
-	@cd "MiniOthello" && "$(MAKE)" -f  "MiniOthello.mk"
+	@echo "----------Building project:[ DualProcessor - Debug ]----------"
+	@cd "DualProcessor" && "$(MAKE)" -f  "DualProcessor.mk"
 clean:
-	@echo "----------Cleaning project:[ MiniOthello - Debug ]----------"
-	@cd "MiniOthello" && "$(MAKE)" -f  "MiniOthello.mk" clean
+	@echo "----------Cleaning project:[ DualProcessor - Debug ]----------"
+	@cd "DualProcessor" && "$(MAKE)" -f  "DualProcessor.mk" clean

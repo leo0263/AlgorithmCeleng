@@ -13,7 +13,9 @@
   <Project Name="NumberOfRs" Path="NumberOfRs/NumberOfRs.project" Active="No"/>
   <Project Name="TheManyPath" Path="TheManyPath/TheManyPath.project" Active="No"/>
   <Project Name="CombinationSum" Path="CombinationSum/CombinationSum.project" Active="No"/>
-  <Project Name="MiniOthello" Path="MiniOthello/MiniOthello.project" Active="Yes"/>
+  <Project Name="MiniOthello" Path="MiniOthello/MiniOthello.project" Active="No"/>
+  <Project Name="SRINAcademy" Path="SRINAcademy/SRINAcademy.project" Active="No"/>
+  <Project Name="DualProcessor" Path="DualProcessor/DualProcessor.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -32,6 +34,8 @@
       <Project Name="TheManyPath" ConfigName="Debug"/>
       <Project Name="CombinationSum" ConfigName="Debug"/>
       <Project Name="MiniOthello" ConfigName="Debug"/>
+      <Project Name="SRINAcademy" ConfigName="Debug"/>
+      <Project Name="DualProcessor" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -50,6 +54,8 @@
       <Project Name="TheManyPath" ConfigName="Release"/>
       <Project Name="CombinationSum" ConfigName="Release"/>
       <Project Name="MiniOthello" ConfigName="Release"/>
+      <Project Name="SRINAcademy" ConfigName="Release"/>
+      <Project Name="DualProcessor" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
